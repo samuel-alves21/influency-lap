@@ -286,9 +286,33 @@ p {
 /* ------------------------------------- Section04 ------------------------------------- */
 
   .section04 {
-    background: url('img/section04-background-mobile.jpg');
+    background: url('img/section04-background-mobile.jpg') no-repeat center;
+    background-size: cover;
   }
 
+  .text04 {
+    align-self: normal;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+  }
+
+  .arrow04 {
+    width: 150px;
+  }
+
+  .section04 h2  {
+    max-width: 324px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .section04 p {
+    text-align: center;
+  }
 }
 
 /* ------------------------------------- Adjusts ------------------------------------- */
@@ -306,6 +330,6 @@ p {
   }
 
   .arrow04 {
-    width: 150px;
+    width: 100px;
   }
 }
