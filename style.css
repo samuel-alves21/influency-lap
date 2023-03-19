@@ -59,6 +59,29 @@ p {
   object-fit: cover;
 }
 
+.wrapper {
+  padding: 0 5vw;
+}
+
+.wrapper h2 {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: calc(30px + 2vw) 
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.text p:not(:last-child) {
+  margin-bottom: calc(5px + 2vw);
+}
+
+.text p {
+  max-width: 650px;
+}
+
 /* ------------------------------------- Section01 ------------------------------------- */
 
 .section01 {
@@ -118,32 +141,12 @@ p {
   justify-content: center;
 }
 
-.wrapper02 {
-  padding: 0 5vw;
-}
-
 .wrapper02 h2 {
   max-width: 1170px;
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: calc(30px + 2vw) 
-}
-
-.content02 {
-  display: flex;
-  align-items: center;
 }
 
 .content02 > * {
   width: 50%;
-}
-
-.text02 p:not(:last-child) {
-  margin-bottom: calc(5px + 2vw);
-}
-
-.text02 p {
-  max-width: 650px;
 }
 
 .divisor02 {
@@ -156,7 +159,20 @@ p {
 
 .section03 {
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.content03 > * {
+  width: 50%;
+}
+
+.text03 {
+  padding-right: 2vw;
+}
+
+/* ------------------------------------- Queries ------------------------------------- */
 
 @media screen and (max-width: 900px) {
 
