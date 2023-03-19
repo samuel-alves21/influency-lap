@@ -66,7 +66,7 @@ p {
 .wrapper h2 {
   text-align: center;
   margin: 0 auto;
-  padding-bottom: calc(30px + 2vw) 
+  padding-bottom: calc(15px + 2vw) 
 }
 
 .content {
@@ -90,6 +90,7 @@ p {
   display: flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .section01 p {
@@ -173,9 +174,46 @@ p {
   padding-right: 2vw;
 }
 
+  /* ------------------------------------- Section04 ------------------------------------- */
+
+.section04 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('img/section04-background.jpg') no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.arrow04 {
+  width: 230px;
+  position: absolute;
+  top: 0;
+}
+
+.text04 {
+  padding: 0 25vw;
+  align-self: flex-start;
+}
+
+.section04 h2 {
+  padding-bottom: calc(15px + 2vw);
+  max-width: 459px;
+}
+
+.section04 p {
+  color: white;
+  max-width: 411px;
+}
+
 /* ------------------------------------- Queries ------------------------------------- */
 
 @media screen and (max-width: 900px) {
+
+  .wrapper03 h2 {
+    padding: 0;
+  }
 
   /* ------------------------------------- Section01 ------------------------------------- */
 
@@ -229,7 +267,25 @@ p {
   .text02 p {
     max-width: none;
   }
+
+  /* ------------------------------------- Section03 ------------------------------------- */
+
+  .content03 {
+    flex-direction: column-reverse;
+  }
+
+  .img03 {
+    margin-bottom: calc(5px + 2vw);
+  }
+
+  .text03 {
+    padding: 0;
+    width: 100%;
+  }
+
 }
+
+  /* ------------------------------------- Adjusts ------------------------------------- */
 
 @media screen and (max-width: 650px) {
   .img02 {
