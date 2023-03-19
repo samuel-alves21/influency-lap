@@ -198,7 +198,7 @@ p {
 }
 
 .section04 h2 {
-  padding-bottom: calc(15px + 1vw + 1vh);
+  padding-bottom: calc(15px + 1vw + 0.6vh);
   max-width: 459px;
 }
 
