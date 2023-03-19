@@ -1,0 +1,222 @@
+/* ------------------------------------- confings ------------------------------------- */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.sections {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h5, h6 {
+  background: linear-gradient(91.82deg, #9B7B50 2.56%, #D2B48C 36.94%, #9B7B50 68.66%), #0C0B0B;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  font-family: 'Gotham', sans-serif;
+}
+
+h1 {
+  font-size: calc(25px + 2vw);
+}
+
+h2 {
+  font-size: calc(20px + 2vw);
+}
+
+
+h4 {
+  font-size: calc(14px + 1vw);
+  color: white;
+  font-family: 'Gotham', sans-serif;
+}
+
+button {
+  background-color: #12C57A;
+  color: #262626;
+  font-size: 25px;
+  border: none;
+  padding: 10px 15px;
+}
+
+p {
+  font-size: calc(10px + 1vw);
+  font-family: 'Gotham', sans-serif;
+}
+
+.img-cover {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ------------------------------------- Section01 ------------------------------------- */
+
+.section01 {
+  background: linear-gradient(180deg, #1C1C1C 0%, #101010 100%);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.section01 p {
+  color: white;
+}
+
+.rectangle {
+  padding: 0 3vw;
+  align-self: flex-start;
+}
+
+.section01 .text-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+
+.section01 .text-box > div {
+  margin-bottom: calc(20px + 1vw);
+}
+
+.section01 .title {
+  border: 10px solid;
+  border-image-source: url('img/section01-border.png');
+  border-image-slice: 30;
+  min-width: 400px;
+  max-width: 700px;
+}
+
+.section01 .text {
+  max-width: 507px;
+}
+
+.section01 .woman {
+  height: 100%;
+}
+
+.section01 .woman img {
+  height: 100%;
+}
+
+/* ------------------------------------- Section02 ------------------------------------- */
+
+.section02 {
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper02 {
+  padding: 0 5vw;
+}
+
+.wrapper02 h2 {
+  max-width: 1170px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: calc(30px + 2vw) 
+}
+
+.content02 {
+  display: flex;
+  align-items: center;
+}
+
+.content02 > * {
+  width: 50%;
+}
+
+.text02 p:not(:last-child) {
+  margin-bottom: calc(5px + 2vw);
+}
+
+.text02 p {
+  max-width: 650px;
+}
+
+.divisor02 {
+  width: 235px;
+  position: absolute;
+  bottom: -13px;
+}
+
+/* ------------------------------------- Section03 ------------------------------------- */
+
+.section03 {
+  background-color: white;
+}
+
+@media screen and (max-width: 900px) {
+
+  /* ------------------------------------- Section01 ------------------------------------- */
+
+  .section01 {
+    background: url('img/section01-background-mobile.jpg') no-repeat top;
+    background-size: cover;
+    align-items: flex-end;
+  }
+
+  .rectangle, .woman {
+    display: none;
+  }
+
+  .text-wrapper {
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom:calc(10px + 1.5vw);
+  }
+
+  .section01 .text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .section01 .text-box > div {
+    margin-bottom: calc(30px + 1vw);
+  }
+
+  .section01 .title {
+    max-width: 373px;
+    min-width: 0
+  }
+
+  /* ------------------------------------- Section02 ------------------------------------- */
+
+  .content02 {
+    flex-direction: column;
+  }
+
+  .img02 {
+    width: 70%;
+    margin-bottom: -45px;
+  }
+
+  .text02 {
+    width: 100%;
+  }
+
+  .text02 p {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .img02 {
+    width: 100%;
+    margin-bottom: -45px;
+  }
+}
