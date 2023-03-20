@@ -352,12 +352,15 @@ p {
 
 /* ------------------------------------- Adjusts ------------------------------------- */
 
-@media screen and (max-width: 650px) {
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px) {
   .img02 {
     width: 100%;
     margin-bottom: -45px;
   }
 }
+
 
 @media screen and (max-height: 600px) and (orientation: landscape) {
   .img03 {
