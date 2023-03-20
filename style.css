@@ -1,5 +1,4 @@
 /* ------------------------------------- confings ------------------------------------- */
-
 *,
 *::after,
 *::before {
@@ -187,7 +186,7 @@ p {
 }
 
 .arrow04 {
-  width: 230px;
+  width: 200px;
   position: absolute;
   top: 0;
 }
@@ -230,7 +229,7 @@ p {
 }
 
 .section05 h2 {
-  max-width: 645px;
+  max-width: 815px;
   padding: 0;
 }
 
@@ -352,22 +351,52 @@ p {
 
 /* ------------------------------------- Adjusts ------------------------------------- */
 
-@media only screen   
-and (min-device-width : 768px)   
-and (max-device-width : 1024px) {
+@media screen and (max-width: 650px) {
   .img02 {
     width: 100%;
     margin-bottom: -45px;
   }
 }
 
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px) and (orientation: landscape) , (min-width: 1030px)   
+and (max-width: 1366px) and (orientation: landscape) {
+  h1 {
+    font-size: calc(23px + 1vw + 0.5vh);
+  }
+  
+  h2 {
+    font-size: calc(18px + 1vw + 0.5vh);
+  }
+  
+  
+  h4 {
+    font-size: calc(12px + 0.5vw + 0.2vh);
+  }
+  
+  button {
+    font-size: 25px;
+  }
+  
+  p {
+    font-size: calc(8px + 0.5vw + 0.2vh);
+  }
 
-@media screen and (max-height: 600px) and (orientation: landscape) {
+  .text p {
+    max-width: 365px;
+  }
+
+  .text02 p {
+    max-width: 380px;
+  }
+
   .img03 {
-    width: 25%;
+    width: 35%;
   }
 
   .arrow04 {
     width: 100px;
   }
 }
+
