@@ -229,6 +229,15 @@ p {
   width: 284px;
 }
 
+.section05 h2 {
+  max-width: 645px;
+  padding: 0;
+}
+
+.section05 p {
+  max-width: 585px;
+}
+
 .divisor05 {
   width: 235px;
 }
