@@ -327,7 +327,7 @@ p {
 
   .text04 {
     align-self: normal;
-    height: 80%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -336,7 +336,7 @@ p {
   }
 
   .arrow04 {
-    width: 150px;
+    width: 125px;
   }
 
   .section04 h2  {
