@@ -244,7 +244,7 @@ p {
 
 /* ------------------------------------- Queries ------------------------------------- */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
 
   .wrapper03 h2 {
     padding: 0;
