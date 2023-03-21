@@ -289,8 +289,17 @@ p {
 
 /* ------------------------------------- Section02 ------------------------------------- */
 
-  .content02 {
+  .wrapper02 {
+    height: 80%;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .content02 {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .img02 {
@@ -308,8 +317,17 @@ p {
 
 /* ------------------------------------- Section03 ------------------------------------- */
 
+  .wrapper03 {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .content03 {
+    height: 100%;
     flex-direction: column-reverse;
+    justify-content: space-evenly;
   }
 
   .img03 {
@@ -364,8 +382,11 @@ p {
 
 @media only screen   
 and (min-device-width : 768px)   
-and (max-device-width : 1024px) and (orientation: landscape) , (min-width: 1030px)   
-and (max-width: 1366px) and (orientation: landscape) {
+and (max-device-width : 1024px) 
+and (orientation: landscape) , 
+(min-width: 1030px)   
+and (max-width: 1366px) 
+and (orientation: landscape) {
   h1 {
     font-size: calc(23px + 1vw + 0.5vh);
   }

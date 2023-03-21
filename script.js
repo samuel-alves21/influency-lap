@@ -17,7 +17,7 @@ const general = () => {
           section.classList.contains('section04') ||
           section.classList.contains('section05')
         ) {
-          section.style.height = `${(window.innerHeight * 50) / 100}px`
+          section.style.height = `${(window.innerHeight * 60) / 100}px`
         } else {
           section.style.height = `${(window.innerHeight * 90) / 100}px`
         }
