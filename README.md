@@ -1,6 +1,6 @@
 # Influency-lab
 
-A landpage made to an instagram influencer
+A landing-page made to an instagram influencer
 
 ## Layout
 
