@@ -1,6 +1,10 @@
-# influency-lap
+# Influency-lab
 
-A landpage made to an instagram influencer
+A landing-page made to an instagram influencer
+
+## Layout
+
+Layout made by [Luderson Soares](https://www.instagram.com/luderson_soares/) 
 
 ## Access
 

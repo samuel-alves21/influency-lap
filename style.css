@@ -172,12 +172,12 @@ button:hover {
   justify-content: center;
 }
 
-.content03 {
-  justify-content: space-around;
+.content03 > * {
+  width: 50%;
 }
 
 .img03 {
-  width: 25%;
+  width: 45%;
 }
 
 .text03 {
@@ -294,10 +294,12 @@ button:hover {
     min-width: 0;
   }
 
-  /* ------------------------------------- Section02 ------------------------------------- */
+/* ------------------------------------- Section02 ------------------------------------- */
 
   .content02 {
+    height: 100%;
     flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .img02 {
@@ -313,10 +315,12 @@ button:hover {
     max-width: none;
   }
 
-  /* ------------------------------------- Section03 ------------------------------------- */
+/* ------------------------------------- Section03 ------------------------------------- */
 
   .content03 {
+    height: 100%;
     flex-direction: column-reverse;
+    justify-content: space-evenly;
   }
 
   .img03 {
