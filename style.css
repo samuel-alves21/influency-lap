@@ -172,12 +172,16 @@ button:hover {
   justify-content: center;
 }
 
-.content03 > * {
+.content03 {
+  justify-content: space-around;
+}
+
+.text03 {
   width: 50%;
 }
 
 .img03 {
-  width: 45%;
+  width: 25%;
 }
 
 .text03 {
@@ -303,7 +307,7 @@ button:hover {
   }
 
   .img02 {
-    width: 80%;
+    width: 90%;
     margin-bottom: -15px;
   }
 
@@ -325,7 +329,7 @@ button:hover {
 
   .img03 {
     margin-bottom: calc(5px + 2vw);
-    width: 40% !important;
+    width: 50% !important;
   }
 
   .text03 {
