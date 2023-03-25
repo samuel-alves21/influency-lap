@@ -1,4 +1,8 @@
 /* ------------------------------------- confings ------------------------------------- */
+:root {
+  font-size: calc(15px + 0.390625vw);
+}
+
 *,
 *::after,
 *::before {
@@ -9,6 +13,7 @@
 
 body {
   background-color: black;
+  font-family: 'Gotham', sans-serif;
 }
 
 .sections {
@@ -16,41 +21,39 @@ body {
   margin: 0 auto;
 }
 
-h1, h2, h3, h5, h6 {
-  background: linear-gradient(91.82deg, #9B7B50 2.56%, #D2B48C 36.94%, #9B7B50 68.66%), #0C0B0B;
+h1,
+h2,
+h3,
+h5,
+h6 {
+  background: linear-gradient(
+      91.82deg,
+      #9b7b50 2.56%,
+      #d2b48c 36.94%,
+      #9b7b50 68.66%
+    ),
+    #0c0b0b;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-
-  font-family: 'Gotham', sans-serif;
 }
-
-h1 {
-  font-size: calc(25px + 1vw + 0.5vh);
-}
-
-h2 {
-  font-size: calc(20px + 1vw + 0.5vh);
-}
-
 
 h4 {
-  font-size: calc(14px + 0.5vw + 0.2vh);
   color: white;
-  font-family: 'Gotham', sans-serif;
 }
 
 button {
-  background-color: #12C57A;
+  background-color: #12c57a;
   color: #262626;
-  font-size: 25px;
   border: none;
   padding: 10px 15px;
+  font-size: 20px;
+  transition: transform 0.1s;
 }
 
-p {
-  font-size: calc(10px + 0.5vw + 0.2vh);
-  font-family: 'Gotham', sans-serif;
+button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .img-cover {
@@ -60,12 +63,13 @@ p {
 
 .wrapper {
   padding: 0 5vw;
+  width: 100%;
 }
 
 .wrapper h2 {
   text-align: center;
   margin: 0 auto;
-  padding-bottom: calc(15px + 2vw) 
+  padding-bottom: calc(15px + 2vw);
 }
 
 .content {
@@ -85,7 +89,7 @@ p {
 /* ------------------------------------- Section01 ------------------------------------- */
 
 .section01 {
-  background: linear-gradient(180deg, #1C1C1C 0%, #101010 100%);
+  background: linear-gradient(180deg, #1c1c1c 0%, #101010 100%);
   display: flex;
   align-items: center;
   position: relative;
@@ -107,7 +111,6 @@ p {
   flex-grow: 1;
 }
 
-
 .section01 .text-box > div {
   margin-bottom: calc(20px + 1vw);
 }
@@ -117,7 +120,7 @@ p {
   border-image-source: url('img/section01-border.png');
   border-image-slice: 30;
   min-width: 400px;
-  max-width: 700px;
+  max-width: 479px;
 }
 
 .section01 .text {
@@ -146,6 +149,10 @@ p {
   max-width: 796px;
 }
 
+.content02 {
+  justify-content: space-around;
+}
+
 .content02 > * {
   width: 50%;
 }
@@ -165,15 +172,20 @@ p {
   justify-content: center;
 }
 
-.content03 > * {
-  width: 50%;
+.content03 {
+  justify-content: space-around;
+}
+
+.img03 {
+  width: 25%;
 }
 
 .text03 {
   padding-right: 2vw;
+  width: 50%;
 }
 
-  /* ------------------------------------- Section04 ------------------------------------- */
+/* ------------------------------------- Section04 ------------------------------------- */
 
 .section04 {
   display: flex;
@@ -209,7 +221,6 @@ p {
 /* ------------------------------------- Section05 
 ------------------------------------- */
 
-
 .section05 {
   background-color: white;
   text-align: center;
@@ -243,13 +254,12 @@ p {
 
 /* ------------------------------------- Queries ------------------------------------- */
 
-@media screen and (max-width: 1024px) {
-
+@media screen and (max-width: 768px) {
   .wrapper03 h2 {
     padding: 0;
   }
 
-/* ------------------------------------- Section01 ------------------------------------- */
+  /* ------------------------------------- Section01 ------------------------------------- */
 
   .section01 {
     background: url('img/section01-background-mobile.jpg') no-repeat top;
@@ -257,14 +267,15 @@ p {
     align-items: flex-end;
   }
 
-  .rectangle, .woman {
+  .rectangle,
+  .woman {
     display: none;
   }
 
   .text-wrapper {
     text-align: center;
     padding: 0 10px;
-    margin-bottom:calc(10px + 1.5vw);
+    margin-bottom: calc(10px + 1.5vw);
   }
 
   .section01 .text-box {
@@ -280,18 +291,18 @@ p {
 
   .section01 .title {
     max-width: 373px;
-    min-width: 0
+    min-width: 0;
   }
 
-/* ------------------------------------- Section02 ------------------------------------- */
+  /* ------------------------------------- Section02 ------------------------------------- */
 
   .content02 {
     flex-direction: column;
   }
 
   .img02 {
-    width: 70%;
-    margin-bottom: -45px;
+    width: 80%;
+    margin-bottom: -15px;
   }
 
   .text02 {
@@ -302,7 +313,7 @@ p {
     max-width: none;
   }
 
-/* ------------------------------------- Section03 ------------------------------------- */
+  /* ------------------------------------- Section03 ------------------------------------- */
 
   .content03 {
     flex-direction: column-reverse;
@@ -310,6 +321,7 @@ p {
 
   .img03 {
     margin-bottom: calc(5px + 2vw);
+    width: 40% !important;
   }
 
   .text03 {
@@ -317,7 +329,7 @@ p {
     width: 100%;
   }
 
-/* ------------------------------------- Section04 ------------------------------------- */
+  /* ------------------------------------- Section04 ------------------------------------- */
 
   .section04 {
     background: url('img/section04-background-mobile.jpg') no-repeat center;
@@ -338,7 +350,7 @@ p {
     width: 125px;
   }
 
-  .section04 h2  {
+  .section04 h2 {
     max-width: 324px;
     padding: 0;
     text-align: center;
@@ -348,55 +360,3 @@ p {
     text-align: center;
   }
 }
-
-/* ------------------------------------- Adjusts ------------------------------------- */
-
-@media screen and (max-width: 650px) {
-  .img02 {
-    width: 100%;
-    margin-bottom: -45px;
-  }
-}
-
-@media only screen   
-and (min-device-width : 768px)   
-and (max-device-width : 1024px) and (orientation: landscape) , (min-width: 1030px)   
-and (max-width: 1366px) and (orientation: landscape) {
-  h1 {
-    font-size: calc(23px + 1vw + 0.5vh);
-  }
-  
-  h2 {
-    font-size: calc(18px + 1vw + 0.5vh);
-  }
-  
-  
-  h4 {
-    font-size: calc(12px + 0.5vw + 0.2vh);
-  }
-  
-  button {
-    font-size: 25px;
-  }
-  
-  p {
-    font-size: calc(8px + 0.5vw + 0.2vh);
-  }
-
-  .text p {
-    max-width: 365px;
-  }
-
-  .text02 p {
-    max-width: 380px;
-  }
-
-  .img03 {
-    width: 35%;
-  }
-
-  .arrow04 {
-    width: 100px;
-  }
-}
-
