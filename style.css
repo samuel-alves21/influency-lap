@@ -274,6 +274,13 @@ button:hover {
   width: 235px;
 }
 
+@media (max-height: 550px) and (orientation: landscape) {
+  .sections {
+    height: 150vh !important;
+  }
+}
+
+
 /* ------------------------------------- Queries ------------------------------------- */
 
 @media screen and (max-width: 768px) {
